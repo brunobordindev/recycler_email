@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_view_bg"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/txt_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textSize="24sp"
+            android:text="F"
+            android:textColor="@color/white"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/txt_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txt_icon"
+            android:layout_alignTop="@+id/txt_icon"
+            android:layout_marginStart="16dp"
+            android:layout_toStartOf="@+id/txt_date"
+            android:textColor="@color/darkergray"
+            android:textSize="18sp"
+            android:text="Facebook"/>
+
+        <TextView
+            android:id="@+id/txt_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_user"
+            android:layout_alignStart="@+id/txt_user"
+            android:textColor="@color/darkergray"
+            android:textSize="16sp"
+            android:text="Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook"
+            android:singleLine="true"
+            android:ellipsize="marquee" />
+
+        <TextView
+            android:id="@+id/txt_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_subject"
+            android:layout_alignStart="@+id/txt_user"
+            android:textColor="#9c9c9c"
+            android:textSize="16sp"
+            android:text="Preview Preview Preview Preview Preview Preview Preview Preview Preview Preview Preview Preview "
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_marginEnd="24dp"/>
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:text="28 mai"
+            android:textColor="@color/darkergray"
+            android:singleLine="true"
+            android:ellipsize="marquee"/>
+
+        <ImageView
+            android:id="@+id/img_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_star_border_24"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
